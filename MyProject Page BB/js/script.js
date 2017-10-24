@@ -1,0 +1,4 @@
+// get scripting
+$(function(){
+ 
+})
