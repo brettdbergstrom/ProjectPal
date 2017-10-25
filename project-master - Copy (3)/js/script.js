@@ -1,4 +1,0 @@
-// get scripting
-$(function(){
-  alert($);  
-})
