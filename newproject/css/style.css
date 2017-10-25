@@ -1,0 +1,62 @@
+.navbar {
+   background-color: deepskyblue;
+   color: white;
+}
+    
+       
+.navbar li a.link {
+  color: white;
+}
+        
+
+.h1 {
+  text-align: center;
+  margin: auto;
+  line-height: 2em;
+  color: #0099cc;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+  background-image: url("../img/spaceship.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  top: 1em;
+}
+
+
+.menu img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #555;
+}
+
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    justify-content: center;
+    width: 150px;
+    display:inline-flex;
+    flex-wrap: wrap;
+}
+
+div.gallery:hover {
+    border: 3px solid #777;
+}
+
+div.gallery img {
+    width: 50%;
+    height: auto;
+    display:inline;
+}
+
+div.desc {
+    position: relative;
+    padding:10px;
+    text-align: left;
+}
