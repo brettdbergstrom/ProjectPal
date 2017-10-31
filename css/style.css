@@ -4,10 +4,28 @@ html,body{
     height: 100%;
 }
 
-.navbar {
-   background-color: deepskyblue;
-   color: white;
-}
+
+  .navbar {
+            background-color: deepskyblue;
+            color: white;
+    
+    }
+       
+      .navbar-inverse .navbar-nav>li>a {
+            color: white;
+        }
+     
+      
+      #createaccount {
+            height: 60px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: deepskyblue;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: Verdana, Arial, Sans-Serif;
+    opacity: 0.5;
+      }
     
        
 .navbar li a.link {
@@ -19,7 +37,7 @@ html,body{
   text-align: center;
   margin: auto;
   line-height: 2em;
-  color: #0099cc;
+    color: deepskyblue;
 }
 
 .logo {
