@@ -68,4 +68,4 @@ $('#color').spectrum({
 
 $('.editor').perfectScrollbar();
 
-/* End of Text Editor JS */
+
