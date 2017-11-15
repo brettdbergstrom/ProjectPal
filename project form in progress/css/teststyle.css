@@ -5,22 +5,38 @@
 
 h1 {font-family: 'Raleway', sans-serif; }
 
+.container {
+  width: 400px;
+  height: 500px;
+}
+
+input {
+  width: 300px;
+  margin: 30px 0px;
+  font-size: 1.5rem;
+  border: 1px solid #777;
+  border-radius: 5px;
+}
 
 #bar {
 	padding-left: 0.5em;
 	padding-right:0.5em;
 }
 
-.question {font-family: 'Cormorant Garamond', serif; 
-		   font-size: 1.5em; 
-		   padding-left:1em;
-		   padding-right:1em;
-		}
-
-#start { 
-    position: static;
-    margin:100px 50px;
-    }
+.fs-title {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: blue;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.fs-subtitle {
+  font-weight: normal;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
 #next { 
     position: static;
@@ -32,39 +48,15 @@ h1 {font-family: 'Raleway', sans-serif; }
     margin:100px 50px;
     }
     
-#industry { 
+#bathroom { 
 	position: static;
 	margin-top: 3em;
-	margin-left:7em;
-	margin-right: 7em;
+  text-align: center;
 }
 
-
-.container-fluid {
-	margin:1.2em;
-
-}
-
-#current {
-	
-}
-
-#match {
-	text-align:left;
-	position:center;
-	background-color:transparent;
-	margin-top: 2em;
-
-}
-
-#gopivot {
+#create {
 	position: static;
     margin:100px 50px;
-
-}
-
-#date {
-	position:center;
 }
 
  <style type="text/css">
@@ -147,10 +139,9 @@ fieldset.date select:hover
     display: none;
 }
 
-
-
-
-
+#notes {
+  color:#A9A9A9;
+}
 
 
 
