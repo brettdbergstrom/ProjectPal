@@ -43,16 +43,20 @@
       </div>
      </div>
 
+<div id="q1">
+  <h2 class="fs-title">Question 1</h2>
+  <h3 class="fs-subtitle">What's the name of your project?</h3>   
+    <input type="text" ng-model="name"></p>  
+</div>
 
-    <div id="question">
-        What items do you want to remodel?
-    </div>
+<div id="q2">
+<h2 class="fs-title">Question 2</h2>
+<h3 class="fs-subtitle">What items do you want to remodel?</h3>
     
-    <div id="industry">
+    <div id="bathroom">
      <div class="dropdown"> 
     <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Items
     <span class="caret"></span></button>
-    
     </div>
 
     <select multiple>
@@ -63,18 +67,25 @@
   <option value="audi">Sinks</option>
   <option value="audi">Flooring</option>
 </select>
-<p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+<br><br>
+
+<div id="notes">
+Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.
+</div>
+
     </div>
+</div>
  
-<div id="q1">
-<div class="question">
-        When do you want your remodeling to start and finish?
-    </div>
+<div id="q3">
+<h2 class="fs-title">Question 3</h2>
+<h3 class="fs-subtitle">When do you want your remodeling to start and finish?</h3>
+    <br><br>
 <fieldset class="date"> 
   <legend>Start Date </legend> 
   <label for="month_start">Month</label> 
   <select id="month_start" 
           name="month_start" /> 
+    <option>December</option>
     <option>January</option>       
     <option>February</option>       
     <option>March</option>       
@@ -85,8 +96,7 @@
     <option>August</option>       
     <option>September</option>       
     <option>October</option>       
-    <option>November</option>       
-    <option>December</option>       
+    <option>November</option>              
   </select> - 
   <label for="day_start">Day</label> 
   <select id="day_start" 
@@ -145,6 +155,7 @@
   <label for="month_end">Month</label> 
   <select id="month_end" 
           name="month_end" /> 
+    <option>December</option> 
     <option>January</option>       
     <option>February</option>       
     <option>March</option>       
@@ -155,8 +166,7 @@
     <option>August</option>       
     <option>September</option>       
     <option>October</option>       
-    <option>November</option>       
-    <option>December</option>       
+    <option>November</option>           
   </select> - 
   <label for="day_end">Day</label> 
   <select id="day_end" 
@@ -211,134 +221,26 @@
 </fieldset> 
 </div>
 
-<div id="q2">
-  <div class="question">
-      What is your estimated remodeling cost for this project?
-  </div>    
+<div id="q4">
+  <h2 class="fs-title">Question 4</h2>
+  <h3 class="fs-subtitle">What is your estimated remodeling cost for this project?</h3>   
+ 
   <div class="money">
       <input type="text" class="numberOnly" autocomplete="off" maxlength="4" /><div>$</div>
   </div>
-</div>
 <br><br>
-<div class="question">
+<div class="fs-subtitle">
     What is your maximum budget for this project?
 </div>   
 <div class="money">
     <input type="text" class="numberOnly" autocomplete="off" maxlength="6" /><div>$</div>
 </div>
-
-
-
-
-  <div id="current">
-      <div class="container-fluid">  
-       <div class="dropdown"> 
-          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select
-          <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-          <li><a href="#">Flexible Routine</a></li>
-          <li><a href="#">Creative</a></li>
-          <li><a href="#">Networking</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="container-fluid"> 
-       <div class="dropdown"> 
-          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select
-          <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-          <li><a href="#">Flexible Routine</a></li>
-          <li><a href="#">Creative</a></li>
-          <li><a href="#">Networking</a></li>
-          </ul>
-        </div>
-         </div>
-      <div class="container-fluid"> 
-       <div class="dropdown"> 
-          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select
-          <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-          <li><a href="#">Flexible Routine</a></li>
-          <li><a href="#">Creative</a></li>
-          <li><a href="#">Networking</a></li>
-          </ul>
-        </div>
-         </div>
-
-      <div class="container-fluid">  
-        <button type="button" class="btn btn-default btn-sm">
-          <span class="glyphicon glyphicon-plus-sign"></span> Add More
-        </button>
-      </div>  
-
-  </div>
-  </div>
-
-
-  </div>
-  </div>
-
-
-<div id="wish">
-      <div class="container-fluid">  
-       <div class="dropdown"> 
-          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select
-          <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-          <li><a href="#">Flexible Routine</a></li>
-          <li><a href="#">Creative</a></li>
-          <li><a href="#">Networking</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="container-fluid"> 
-       <div class="dropdown"> 
-          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select
-          <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-          <li><a href="#">Flexible Routine</a></li>
-          <li><a href="#">Creative</a></li>
-          <li><a href="#">Networking</a></li>
-          </ul>
-        </div>
-         </div>
-      <div class="container-fluid"> 
-       <div class="dropdown"> 
-          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select
-          <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-          <li><a href="#">Flexible Routine</a></li>
-          <li><a href="#">Creative</a></li>
-          <li><a href="#">Networking</a></li>
-          </ul>
-        </div>
-         </div>
-
-      <div class="container-fluid">  
-        <button type="button" class="btn btn-default btn-sm">
-          <span class="glyphicon glyphicon-plus-sign"></span> Add More
-        </button>
-      </div>  
-
-  </div>
-  </div>
-
-
-  <div id="match">
-    <div class="container">
-      <ul class="list-group">
-      <li class="list-group-item">Advertising<span class="badge">75%</span></li>
-      <li class="list-group-item">Public Relationship<span class="badge">68%</span></li>
-      <li class="list-group-item">Marketing<span class="badge">53%</span></li>
-     </ul>
-   </div>
-   </div> 
-
-
-
-    <div id="start">  
-    <button type="button" class="btn btn-primary btn-block">Start</button>
-    </div>  
+</div>
+  
+<div id="q5">
+  <h2 class="fs-title">Question 5</h2>
+  <h3 class="fs-subtitle">Additional Notes?</h3>   
+</div>
 
     <div id="next">  
     <button type="button" class="btn btn-primary btn-block">Next</button>
@@ -348,7 +250,7 @@
     <button type="button" class="btn btn-primary btn-block">Submit</button>
     </div>  
 
-    <div id="gopivot">
+    <div id="create">
      <button type="button" class="btn btn-primary btn-block">Create Project</button>
     </div>
 

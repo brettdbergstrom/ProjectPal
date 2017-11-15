@@ -2,46 +2,24 @@
 
 $(function(){ // DON'T TOUCH ME
 
-    $("#start").on('click',function(){
-        $("#taketest").hide(); 
-        $(".jumbotron").fadeIn(); 
+   $("#start").on('click',function(){ 
         $("#bar").fadeIn(); 
-        $("#question").fadeIn();
-        $("#industry").fadeIn();
+        $("#fs-subtitle").fadeIn();
+        $("#q1").fadeIn();
         $(this).hide();
         $("#next").fadeIn();
-        $("#bighead").hide();
 
 
     });
 
-    $("#gopivot").on("click",function(){
-        window.location.href = "homepage.html"; 
-    });
-
-    $(".jumbotron").hide(); 
-    $("#bar").hide(); 
-    $("#question").hide(); 
-    $("#next").hide(); 
-    $("#industry").hide();
-
-
-   
-
-    $("#skillset").hide();  
-    $("#current").hide();  
-    $("#expect").hide();  
-    $("#wish").hide(); 
+    $("#q2").hide();  
+    $("#q3").hide();  
+    $("#q4").hide();  
+    $("#q5").hide(); 
     $("#submit").hide(); 
-    // your questions stored in five variables
-    var q1 = "What industry are you currently in?";
-    var q2 = "List your skills and grade them.";
-    var q3 = "What do you like about your current job?";
-    var q4 = "What do you expect for your next job?";
-    var q5 = "What current skills you wish to use for next job?";
-    var q6 = "industries that you have over 50% compatibility to pivot into:"
-    
-    // change progress bar to 30%
+
+
+
     $("#next").on('click',function(){
         
         // let's get the percentage for the progress bar
@@ -56,7 +34,7 @@ $(function(){ // DON'T TOUCH ME
             $(".progress-bar").css("width","40%"); 
             $(".sr-only").text('40% Complete');
             $("#q1").hide();
-            $("#question").text(q2);
+            $("#fs-subtitle").text(q2);
             $("#q2").fadeIn();
             
         // if we're at 40%
@@ -65,40 +43,39 @@ $(function(){ // DON'T TOUCH ME
             $(".progress-bar").css("width","60%");
             $(".sr-only").text('60% Complete');
             $("#q2").hide();
-            $("#question").text(q3);
-            $("#current").fadeIn();
+            $("#fs-subtitle").text(q3);
+            $("#q3").fadeIn();
             
         // if we're at 60%
         } else if (progress === "60%") {
             
             $(".progress-bar").css("width","80%");
             $(".sr-only").text('80% Complete');
-            $("#current").hide();
-            $("#question").text(q4);
-            $("#expect").fadeIn();
+            $("#q3").hide();
+            $("#fs-subtitle").text(q4);
+            $("#q4").fadeIn();
         
         // if we're at 80% 
         } else if (progress === "80%") {
             
             $(".progress-bar").css("width","100%");
             $(".sr-only").text('100% Complete');
-            $("#expect").hide(); 
+            $("#q4").hide(); 
             $("#next").hide(); 
-            $("#question").text(q5);
-            $("#wish").fadeIn();
+            $("#fs-subtitle").text(q5);
+            $("#q5").fadeIn();
             $("#submit").fadeIn();
             
         } else {
 
-            $("#question").text("Completed!");
+            $("#fs-subtitle").text("Completed!");
             $("button").hide();
 
         }
         
     });
 
-    $("#match").hide(); 
-    $("#gopivot").hide();
+    $("#create").hide();
 
     $(".dropdown-menu li a").click(function(){
         $(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="caret"></span>');
@@ -109,7 +86,7 @@ $(function(){ // DON'T TOUCH ME
          $("#submit").hide();
          $(".progress").hide();
          $("#wish").hide();
-         $("#question").text("Industries that you have over 50% compatibility to pivot into:");
+         $("#fs-subtitle").text("Industries that you have over 50% compatibility to pivot into:");
          $("#match").fadeIn();
          $("#gopivot").fadeIn();
      });
