@@ -32,10 +32,20 @@ h1 {
     background-color: deepskyblue;
     text-align: center;
     color: #FFFFFF;
-    font-family: Verdana, Arial, Sans-Serif;
+    font-family: Verdana, Sans-Serif;
     opacity: 0.5;
       }
-    
+
+#savebutton: {
+    height: 60px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: deepskyblue;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: Verdana, Arial, Sans-Serif;
+}
+
        
 .navbar li a.link {
   color: white;
@@ -329,6 +339,9 @@ div.desc {
   min-height: 460px;
 }
 
+.centermodal {
+    text-align:center;
+}
 
 /* Text Editor CSS */
 
@@ -340,7 +353,7 @@ body {
 .texteditor {
    width: 70%;
    min-width: 562px;
-   margin: 60px auto 0;
+   margin: 60px auto 0 1;
    background: #fafafa;
    border-radius: 8px;
    box-shadow: 0 5px 8px 0 rgba(0,0,0,.4);
@@ -350,25 +363,6 @@ body {
 .toolbarTE {
    width: 100%;
    margin: 0 auto 10px;
-}
-
-button {
-   width: 30px;
-   height: 30px;
-   border-radius: 3px;
-   background: none;
-   border: none;
-   box-sizing: border-box;
-   padding: 0;
-   font-size: 20px;
-   color: #a6a6a6;
-   cursor: pointer;
-   outline: none;
-}
-
-button:hover {
-   border: 1px solid #a6a6a6;
-   color: #777;
 }
 
 #bold,
