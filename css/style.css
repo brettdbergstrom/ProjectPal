@@ -545,7 +545,6 @@ body {
 .details {
   position: relative;
   width: 420px;
-  height: 75px;
   background: skyblue;
   margin-top: 5px;
   border-radius: 4px;
@@ -925,3 +924,39 @@ fieldset.date select:hover
 }
 
 /* End of Text Editor CSS */
+
+
+/* Photo Gallery */
+
+#beforeaftergallery {
+    position:relative;
+}
+
+#photoupload, .beforeafterphotos, #ellipsis {
+    width: 75px;
+    height: 75px;
+    margin-right:10px;
+    float:left;
+    margin-bottom:3px;
+    background-color: azure;
+}
+
+#ellipsis {
+    display:none;
+    position:absolute;
+    left:172.5px;
+    top:20px;
+    background-color:azure;
+    height:auto;
+    text-align:center;
+}
+
+#photoupload {
+    margin-left:10px; 
+}
+
+.beforeafterphotos img {
+    width:75px;
+    height:75px;
+}
+
