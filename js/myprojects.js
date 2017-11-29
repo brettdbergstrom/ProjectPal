@@ -6,4 +6,19 @@ $(document).ready(function() {
     $("#myCarousel2 .item").on("click",function(){
         
     });
+    
+    // add photos
+    $(".beforeafterphotos").hide();
+    
+    $("#photoupload").on("click",function(){
+        $(".beforeafterphotos").hide();
+        $("#ellipsis").show();
+        setTimeout(
+                function(){
+                    $("#ellipsis").hide();
+                    $(".beforeafterphotos").fadeIn("slow");
+            },3000);
+        
+    });
+    
 });

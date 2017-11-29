@@ -129,6 +129,8 @@ $(document).ready(function(){
 /* Calendar JS */
 $(document).ready(function(){
 
+    
+$("#commentbox").hide();
 
 // script goes here
 $("#fifth").on('click',function(){
