@@ -1,7 +1,3 @@
-// get scripting
-
-$(function(){ // DON'T TOUCH ME
-
 google.load("visualization", "1", {
   packages: ["corechart"]
 });
@@ -70,12 +66,3 @@ function render_applicant_sources() {
 
   chart.draw(data, options);
 }
-
-/* End of Text Editor JS */
-}); // DONT' TOUCH ME
-
-
-
-
-
-

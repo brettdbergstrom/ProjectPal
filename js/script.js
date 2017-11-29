@@ -1,11 +1,3 @@
-
-
-   $(“#homehub”).on(“click”,function(){
-        window.location.href = “newproject.html”;
-    });
-
-
-
 $(document).ready(function() {
     $('#createaccount').mouseenter(function() {
         $('#createaccount').fadeTo('fast', 1);
@@ -15,6 +7,8 @@ $(document).ready(function() {
         $('#createaccount').fadeTo('slow',0.5);
     });
 });
+
+
 
 
 /* Brian's Notes workaround*/
