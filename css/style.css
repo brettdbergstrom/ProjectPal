@@ -454,13 +454,14 @@ select > option {
 
 /* Brian's Notes code */
 
-.notes button {
+.notes button, #addnote button {
     width:200px; important!
 }
 
-.notes {
+.notes, #addnote {
     margin:20px auto;
     text-align:center;
+}
 }
 
 /* Calendar Code */
@@ -591,7 +592,7 @@ body {
 }
 
 .day.other {
- color: orange;
+ color: gray;
 }
 
 .day.today {
@@ -705,10 +706,12 @@ body {
 }
 
 .event {
-  font-size: 20px;
+    font-family: Ubuntu;
+  font-size: 15px;
+    color: white;
   line-height: 22px;
   letter-spacing: .5px;
-  padding: 16px 16px;
+  padding: 5px 5px;
   vertical-align: top;
 }
 
