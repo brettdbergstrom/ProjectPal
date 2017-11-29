@@ -16,15 +16,15 @@ h1, h2, h3 {
     align-self: center;
 }
 
-  .navbar {
-            background-color: deepskyblue;
-            color: white;
+.navbar {
+    background-color: deepskyblue;
+    color: white;
     
-    }
+}
        
-      .navbar-inverse .navbar-nav>li>a {
-            color: white;
-        }
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
      
       
 #createaccount {
@@ -1013,5 +1013,25 @@ fieldset.date select:hover
   font-weight: 300;
   color: cornflowerblue;
 }
+
+svg{
+  display:block;
+  margin:0 auto;
+  position: relative;
+  width:100vh;
+}
+
+#tableLamp path,
+#tableLamp rect,
+#tableLamp circle,
+#window path,
+#window rect,
+#pictures rect{
+  fill:none;
+  stroke-width:5px;
+  stroke:#c7e7fc;
+}
+
+#unbend{visibility:hidden}
 
 /* End of Text Editor CSS */
