@@ -2,6 +2,13 @@
 
 $(function(){ // DON'T TOUCH ME
 
+    $('#openNav').on('click',function() {
+        $('#mySidebar').fadeIn();
+    });
+    $('#cancleNav').on('click',function() {
+        $('#mySidebar').hide();
+    });
+
    $("#start").on('click',function(){ 
         $("#bar").fadeIn(); 
         $("#fs-subtitle").fadeIn();
@@ -77,7 +84,7 @@ $(function(){ // DON'T TOUCH ME
     // });
 
     $("#submit").on('click',function(){
-         window.location.replace("./myproject.html");
+         window.location.replace("./AccountHome.html");
      });
 
 $('.money > div').click(function() {

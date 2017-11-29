@@ -1,12 +1,24 @@
 $(document).ready(function() {
+    $('#openNav').on('click',function() {
+        $('#mySidebar').fadeIn();
+    });
+    $('#cancleNav').on('click',function() {
+        $('#mySidebar').hide();
+    });
     $('#createaccount').mouseenter(function() {
         $('#createaccount').fadeTo('fast', 1);
-        
     })
     $('#createaccount').mouseleave(function() {
         $('#createaccount').fadeTo('slow',0.5);
     });
 });
+
+
+var bounce = new TimelineLite({onComplete:function(){bounce.reverse()},onReverseComplete:function(){bounce.play()}})
+bounce.to("#bend", .15, {morphSVG:"#unbend", ease:Linear.easeInOut})
+.to('#dog',1,{rotation:-15,transformOrigin:'50% 50%',physicsProps:{y:{velocity:-780, angle:90, friction:0.11, acceleration:1.5}}},'-=.15').to(['#backLegs path','#frontLegs path'],.5,{y:-3,rotation:20},'-=1')
+bounce.timeScale(1.5)
+
 
 
 /* Text Editor JS */
@@ -152,5 +164,6 @@ $("#fifth").on('click',function(){
 
 });
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
 
 
