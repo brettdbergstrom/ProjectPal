@@ -4,6 +4,8 @@
 html,body{
     position: relative;
     height: 100%;
+    padding-right: 1em;
+    padding-left: 1em;
 }
 
 h1, h2, h3 {
@@ -18,8 +20,7 @@ h1, h2, h3 {
 
 .navbar {
     background-color: deepskyblue;
-    color: white;
-    
+    color: white;    
 }
        
 .navbar-inverse .navbar-nav>li>a {
@@ -1033,5 +1034,47 @@ svg{
 }
 
 #unbend{visibility:hidden}
+
+.circle-chart__circle {
+  animation: circle-chart-fill 2s reverse; /* 1 */ 
+  transform: rotate(-90deg); /* 2, 3 */
+  transform-origin: center; /* 4 */
+}
+
+
+.circle-chart__circle--negative {
+  transform: rotate(-90deg) scale(1,-1); /* 1, 2, 3 */
+}
+
+.circle-chart__info {
+  animation: circle-chart-appear 2s forwards;
+  opacity: 0;
+  transform: translateY(0.3em);
+}
+
+@keyframes circle-chart-fill {
+  to { stroke-dasharray: 0 100; }
+}
+
+@keyframes circle-chart-appear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.grid {
+  display: grid;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 31em) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 
 /* End of Text Editor CSS */
