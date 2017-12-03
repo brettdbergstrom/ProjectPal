@@ -11,7 +11,6 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
      <link rel="stylesheet" type="text/css" href="css/style.css">
-     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,72 +21,12 @@
   </head>
   <body>
   
-<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none; width: 350px;" id="mySidebar">
-  <button class="w3-bar-item w3-large" id="cancleNav">Close &times;</button>
-  <div class="container">
-    <div class="row profile">
-      <div class="col-md-3">
-        <div class="profile-sidebar">
-          <!-- SIDEBAR USERPIC -->
-          <div class="profile-userpic">
-            <img src="img/userprofile.jpg" class="img-responsive" alt="">
-          </div>
-          <!-- END SIDEBAR USERPIC -->
-          <!-- SIDEBAR USER TITLE -->
-          <div class="profile-usertitle">
-            <div class="profile-usertitle-name">
-              junoindisorder
-            </div>
-            <div class="profile-usertitle-job">
-              <a href="http://j.mp/metronictheme" target="_blank">duanlizhu2018@u.northwestern.edu</a>
-            </div>
-          </div>
-          <!-- END SIDEBAR USER TITLE -->
-          <!-- SIDEBAR BUTTONS -->
-          <div class="profile-userbuttons">
-            <button type="button" class="btn btn-success btn-sm">Follow</button>
-            <button type="button" class="btn btn-danger btn-sm">Message</button>
-          </div>
-          <!-- END SIDEBAR BUTTONS -->
-          <!-- SIDEBAR MENU -->
-          <div class="profile-usermenu">
-            <ul class="nav">
-              <li class="active">
-                <a href="./AccountHome.html">
-                <i class="glyphicon glyphicon-home"></i>
-                Home </a>
-              </li>
-              <li>
-                <a href="#">
-                <i class="glyphicon glyphicon-user"></i>
-                Shared </a>
-              </li>
-              <li>
-                <a href="#" target="_blank">
-                <i class="glyphicon glyphicon-ok"></i>
-                Projects </a>
-              </li>
-              <li>
-                <a href="#">
-                <i class="glyphicon glyphicon-flag"></i>
-                Tags </a>
-              </li>
-            </ul>
-          </div>
-          <!-- END MENU -->
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+  
   
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button class="w3-button w3-xlarge" id="openNav">☰</button>
-    </div>
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#"><img src="img/logoNAV.png" height="24" alt="ProjectPal" /></a>
+  <a class="navbar-brand" href="#"><img src="img/logoNAV.png" height="24" alt="ProjectPal" /></a>
     </div>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="#"><span class="glyphicon glyphicon-user"></span>Login</a></li>
@@ -95,11 +34,17 @@
   </div>
 </nav>
    
-      <h1><a href="./form.html">Create New Project</a></h1>
+   <div class="hubnew">
+      <img class="hubnewimg" src="img/newproject.jpg" alt="liftoff" href="selectcategory.html">
+      <h1><a href="selectcategory.html">Create New Project</a></h1>
 
-    
+      </div>
       
-        <h1><a href="./myproject.html">My Projects</a></h1>
+    <div class="hubnew"> 
+       <img id="myproject" class="hubmyimg" src="img/MyProject.png" alt="myprojects" width="180">
+        <h1><a href="MyProjects.html">My Projects</a></h1>
+        
+      </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

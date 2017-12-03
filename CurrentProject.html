@@ -16,17 +16,6 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     
     
-    <!-- Text Editor link references -->
-    
-      <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
-<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.7.1/spectrum.min.css'>
-<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.7/css/perfect-scrollbar.min.css'>
-
-      <link rel="stylesheet" href="css/style.css">
-
-  <!-- end of TE link refs-->
-    
-    
     
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -36,7 +25,6 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-<body>
  
   
 <nav class="navbar navbar-inverse">
@@ -50,133 +38,98 @@
   </div>
 </nav>
 
+<h4>Juno's</h4>
+
 <h3> Winter Bathroom Remodel </h3>
 
-<div class="container centermodal">
-
-<!-- OLD NOTES FUNCTION
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Project Notes
-</button>
-
-
- <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Project Notes</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="texteditor">
-   <div class="toolbarTE">
-      <button id="bold" title="Bold (Ctrl+B)"><i class="fa fa-bold"></i></button>
-      <button id="italic" title="Italic (Ctrl+I)"><i class="fa fa-italic"></i></button>
-      <button id="underline" title="Underline (Ctrl+U)"><i class="fa fa-underline"></i></button>
-      <select name="fonts" id="fonts">
-         <option value="Arial" selected>Arial</option>
-         <option value="Georgia">Georgia</option>
-         <option value="Tahoma">Tahoma</option>
-         <option value="Times New Roman">Times New Roman</option>
-         <option value="Verdana">Verdana</option>
-         <option value="Impact">Impact</option>
-         <option value="Courier New">Courier New</option>
-      </select>
-      <select name="size" id="size">
-         <option value="8">8</option>
-         <option value="10">10</option>
-         <option value="12">12</option>
-         <option value="14">14</option>
-         <option value="16" selected>16</option>
-         <option value="18">18</option>
-         <option value="20">20</option>
-         <option value="22">22</option>
-         <option value="24">24</option>
-         <option value="26">26</option>
-      </select>
-      <input type="text" id="color" />
-      <button id="align-left" title="Left"><i class="fa fa-align-left"></i></button>
-      <button id="align-center" title="Center"><i class="fa fa-align-center"></i></button>
-      <button id="align-right" title="Right"><i class="fa fa-align-right"></i></button>
-      <button id="list-ul" title="Unordered List"><i class="fa fa-list-ul"></i></button>
-      <button id="list-ol" title="Ordered List"><i class="fa fa-list-ol"></i></button>
-   </div>
-   
-   <div class="editor" contenteditable></div>
-</div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-    </div>
-
- 
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.7.1/spectrum.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.7/js/min/perfect-scrollbar.jquery.min.js'></script>
-
-    <script  src="js/index.js"></script>
-
-
-<br />
-<br />
-<br />
-
--->
  <body>
- 
-  <div class="container">
-          <div class="notes">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#note" id="nov12">Note - 11/12/17</button>
-          </div>
+      <div class="container">
           
-          <div class="notes">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#note" id="dec5">Note - 12/05/17</button>
-          </div>
+        <!-- This is where any note buttons will appear -->
+        <div id="yournotes">
+        
+            <div class="notes" id="1"><button type="button" class="btn btn-primary" id="note1" data-toggle="modal" data-target="#note">Note - 11/24 3:43 PM</button></div>
           
-          <div class="notes">
-            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#note" id="new">+ Add Note</button>
-          </div>
+        </div>
           
-          <div id="note" class="modal fade" role="dialog">
-              <div class="modal-dialog">
+        <!-- Add new note -->  
+        <div id="addnote">
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#note" id="new">+ Add Note</button>
+        </div>
+
+        <!-- Modal -->  
+        <div id="note" class="modal fade" role="dialog">
+            <div class="modal-dialog">
                 <!-- Modal content-->
                 <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" id="x">&times;</button>
-                    <h4 class="modal-title">Notes</h4>
-                  </div>
-                  <div class="modal-body">
-                    <div class="form-group">
-                        <textarea class="form-control" placeholder="Add Note" rows="5" id="comment"></textarea>
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" id="x">&times;</button>
+                        <h4 class="modal-title">Notes</h4>
                     </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal" id="btn">Close</button>
-                  </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Add Note" rows="5" id="comment"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" id="btn">Save</button>
+                    </div>
                 </div>
             </div>
         </div>
           
       </div>
+
+          
+
+<!-- Calendar -->
       
-  <div data-brackets-id="1515" id="calendar"><div class="header"><h1>December 2017</h1><div class="right"></div><div class="left"></div></div><div class="legend"><span class="entry orange">Work</span><span class="entry blue">Sports</span><span class="entry yellow">Kids</span><span class="entry green">Other</span></div><div class="legend"><span class="entry orange">Work</span><span class="entry blue">Sports</span><span class="entry yellow">Kids</span><span class="entry green">Other</span></div><div class="legend"><span class="entry orange">Work</span><span class="entry blue">Sports</span><span class="entry yellow">Kids</span><span class="entry green">Other</span></div><div class="legend"><span class="entry orange">Work</span><span class="entry blue">Sports</span><span class="entry yellow">Kids</span><span class="entry green">Other</span></div><div class="legend"><span class="entry orange">Work</span><span class="entry blue">Sports</span><span class="entry yellow">Kids</span><span class="entry green">Other</span></div><div class="legend"><span class="entry orange">Work</span><span class="entry blue">Sports</span><span class="entry yellow">Kids</span><span class="entry green">Other</span></div><div class="month in prev"><div class="week"><div class="day other"><div class="day-name">Sun</div><div class="day-number">26</div><div class="day-events"></div></div><div class="day other"><div class="day-name">Mon</div><div class="day-number">27</div><div class="day-events"></div></div><div class="day other"><div class="day-name">Tue</div><div class="day-number">28</div><div class="day-events"></div></div><div class="day other"><div class="day-name">Wed</div><div class="day-number">29</div><div class="day-events"></div></div><div class="day other"><div class="day-name">Thu</div><div class="day-number">30</div><div class="day-events"></div></div><div class="day"><div class="day-name">Fri</div><div class="day-number">01</div><div class="day-events"></div></div><div class="day"><div class="day-name">Sat</div><div class="day-number">02</div><div class="day-events"></div></div></div><div class="week"><div class="day"><div class="day-name">Sun</div><div class="day-number">03</div><div class="day-events"><span class="orange"></span></div></div><div class="day"><div class="day-name">Mon</div><div class="day-number">04</div><div class="day-events"></div></div><div class="day"><div class="day-name">Tue</div><div class="day-number" id="fifth">05</div><div class="day-events"><span class="orange"></span></div></div><div class="day"><div class="day-name">Wed</div><div class="day-number">06</div><div class="day-events"><span class="yellow"></span></div></div><div class="day"><div class="day-name">Thu</div><div class="day-number">07</div><div class="day-events"></div></div><div class="day"><div class="day-name">Fri</div><div class="day-number">08</div><div class="day-events"><span class="yellow"></span></div></div><div class="day"><div class="day-name">Sat</div><div class="day-number">09</div><div class="day-events"><span class="green"></span></div></div>
+  <div data-brackets-id="1515" id="calendar"><div class="header"><h1>December 2017</h1><div class="right"></div><div class="left"></div></div><div class="legend"><span class="entry orange">Work</span><span class="entry blue">Sports</span><span class="entry yellow">Kids</span><span class="entry green">Other</span></div><div class="legend"><span class="entry orange">Work</span><span class="entry blue">Sports</span><span class="entry yellow">Kids</span><span class="entry green">Other</span></div><div class="legend"><span class="entry orange">Work</span><span class="entry blue">Sports</span><span class="entry yellow">Kids</span><span class="entry green">Other</span></div><div class="legend"><span class="entry orange">Work</span><span class="entry blue">Sports</span><span class="entry yellow">Kids</span><span class="entry green">Other</span></div><div class="legend"><span class="entry orange">Work</span><span class="entry blue">Sports</span><span class="entry yellow">Kids</span><span class="entry green">Other</span></div><div class="month in prev"><div class="week"><div class="day other"><div class="day-name">Sun</div><div class="day-number">26</div><div class="day-events"></div></div><div class="day other"><div class="day-name">Mon</div><div class="day-number">27</div><div class="day-events"></div></div><div class="day other"><div class="day-name">Tue</div><div class="day-number">28</div><div class="day-events"></div></div><div class="day other"><div class="day-name">Wed</div><div class="day-number">29</div><div class="day-events"></div></div><div class="day other"><div class="day-name">Thu</div><div class="day-number">30</div><div class="day-events"></div></div><div class="day"><div class="day-name">Fri</div><div class="day-number">01</div><div class="day-events"></div></div><div class="day"><div class="day-name">Sat</div><div class="day-number">02</div><div class="day-events"></div></div></div><div class="week"><div class="day"><div class="day-name">Sun</div><div class="day-number">03</div><div class="day-events"><span class="orange"></span></div></div><div class="day"><div class="day-name">Mon</div><div class="day-number">04</div><div class="day-events"></div></div><div class="day"><div class="day-name">Tue</div><div class="day-number" id="fifth">05</div><div class="day-events"><span class="orange"></span></div></div><div class="day"><div class="day-name">Wed</div><div class="day-number">06</div><div class="day-events"><span class="yellow"></span></div></div><div class="day"><div class="day-name">Thu</div><div class="day-number">07</div><div class="day-events"></div></div><div class="day"><div class="day-name">Fri</div><div class="day-number">08</div><div class="day-events"><span class="yellow"></span></div></div><div class="day"><div class="day-name">Sat</div><div class="day-number">09</div><div class="day-events"><span class="green"></span></div></div>
   
       <div class="details in" id="commentbox">
       <div class="arrow" style="left: 147px;"></div>
       <div class="events in">
             <div class="event">
               <div class="event-category orange"></div>
-              <span>Begin retiling</span>
+              <span>Replace Toilet</span>
+          </div>
+              <div class="event">
+              <div class="event-category green"></div>
+              <span>Begin tiling shower</span>
+            </div>
+            
+            
+            
+             <div id="beforeaftergallery">
+            
+            <div id="photoupload">
+                
+                
+            </div>
+            <div id="ellipsis">
+                <img src="img/ellipsis.gif" />
+            </div>
+            <div class="beforeafterphotos">
+                <img src="img/logogogo.png" />
+            </div>
+            <div class="beforeafterphotos">
+                <img src="img/logogogo.png" />
+            </div>
+            <div class="beforeafterphotos">
+                <img src="img/logogogo.png" />
             </div>
         </div>
+            
+            
+            
+            
+            
+        </div>
+        
+       
+        
+        
+        
     </div>
   
   
@@ -192,7 +145,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/script.js"></script>
- 
+     <script type="text/javascript" src="js/myprojects.js"></script>
  
  
  
