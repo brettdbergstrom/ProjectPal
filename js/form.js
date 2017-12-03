@@ -2,6 +2,7 @@
 
 $(function(){ // DON'T TOUCH ME
 
+// for side bar open and close function
     $('#openNav').on('click',function() {
         $('#mySidebar').fadeIn();
     });

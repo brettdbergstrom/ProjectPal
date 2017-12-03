@@ -9,7 +9,21 @@ $(document).ready(function() {
 });
 
 
+// for side bar open and close function
+    $('#openNav').on('click',function() {
+        $('#mySidebar').fadeIn();
+    });
+    $('#cancleNav').on('click',function() {
+        $('#mySidebar').hide();
+    });
 
+   $("#start").on('click',function(){ 
+        $("#bar").fadeIn(); 
+        $("#fs-subtitle").fadeIn();
+        $("#q1").fadeIn();
+        $(this).hide();
+        $("#next").fadeIn();
+    });
 
 /* Brian's Notes workaround*/
 
