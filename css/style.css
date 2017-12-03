@@ -19,6 +19,10 @@ h4 {
     font-family: Ubuntu;
 }
 
+#indexhead {
+    margin-bottom: 20px;
+}
+
 .bippity {
     margin-bottom: -20px;
 }
@@ -37,6 +41,12 @@ h4 {
             color: white;
         }
       
+
+#charties {
+    margin-left: 75px
+}
+
+
 #createaccount {
     height: 60px;
     width: 100px;
@@ -411,6 +421,12 @@ body {
   margin: 0 auto;
   height: 570px;
   overflow: hidden;
+    margin-top: 50px;
+}
+
+#addphoto {
+    margin-left: 76px;
+    margin-bottom: 30px;
 }
 
 .header {
@@ -945,8 +961,8 @@ fieldset.date select:hover
     height: 75px;
     margin-right:10px;
     float:left;
-    margin-bottom:3px;
-    background-color: azure;
+    margin-bottom:6px;
+    margin-top: 10px;
 }
 
 #ellipsis {
