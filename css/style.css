@@ -12,6 +12,12 @@ h1, h2, h3 {
     
 }
 
+h4 { 
+    text-align: center;
+    font-family: Ubuntu;
+    margin-bottom: -20px;
+}
+
 .homepageimg {
     align-self: center;
 }
@@ -922,9 +928,6 @@ fieldset.date select:hover
   font-weight: 300;
   color: cornflowerblue;
 }
-
-/* End of Text Editor CSS */
-
 
 /* Photo Gallery */
 
