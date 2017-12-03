@@ -17,6 +17,9 @@ h1, h2, h3 {
 h4 { 
     text-align: center;
     font-family: Ubuntu;
+}
+
+.bippity {
     margin-bottom: -20px;
 }
 
@@ -24,19 +27,12 @@ h4 {
     align-self: center;
 }
 
-<<<<<<< HEAD
+
 .navbar {
     background-color: deepskyblue;
     color: white;    
 }
-=======
-  .navbar {
-            background-color: deepskyblue;
-            color: white;
     
-    }
->>>>>>> c44cd9ee5e5da2e44d8f409a464a5a4486831cfc
-       
       .navbar-inverse .navbar-nav>li>a {
             color: white;
         }
