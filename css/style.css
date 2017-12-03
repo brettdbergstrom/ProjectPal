@@ -796,14 +796,14 @@ input {
   margin-bottom: 20px;
 }
 
-#next { 
+#next {
     position: static;
     margin:100px 50px;
     }
 
 #submit { 
-    position: static;
-    margin:100px 50px;
+    position: absolute;
+    margin:100px 105px;
     }
     
 #bathroom { 
