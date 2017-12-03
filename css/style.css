@@ -12,23 +12,28 @@ h1, h2, h3 {
     
 }
 
+h4 { 
+    text-align: center;
+    font-family: Ubuntu;
+    margin-bottom: -20px;
+}
+
 .homepageimg {
     align-self: center;
 }
 
-.navbar {
-    background-color: deepskyblue;
-    color: white;
+  .navbar {
+            background-color: deepskyblue;
+            color: white;
     
-}
+    }
        
-.navbar-inverse .navbar-nav>li>a {
-    color: white;
-}
-     
+      .navbar-inverse .navbar-nav>li>a {
+            color: white;
+        }
       
 #createaccount {
-            height: 60px;
+    height: 60px;
     width: 100px;
     border-radius: 5px;
     background-color: deepskyblue;
@@ -72,6 +77,9 @@ h1, h2, h3 {
   top: 1em;
 }
 
+.carousel-inner {
+    overflow:auto;
+}
 
 .menu img {
   float: left;
@@ -345,120 +353,15 @@ div.desc {
     text-align:center;
 }
 
-/* Text Editor CSS */
 
-/*
-
-body {
-   font-family: Arial, sans-serif;
-   font-size: 16px;
-}
-
-.texteditor {
-   width: 70%;
-   min-width: 562px;
-   margin: 60px auto 0 1;
-   background: #fafafa;
-   border-radius: 8px;
-   box-shadow: 0 5px 8px 0 rgba(0,0,0,.4);
-   padding: 10px;
-}
-
-.toolbarTE {
-   width: 100%;
-   margin: 0 auto 10px;
-}
-
-#bold,
-#italic,
-#underline {
-   font-size: 18px;
-}
-
-#underline,
-#align-right {
-   margin-right: 17px;
-}
-
-#align-left {
-   margin-left: 17px;
-}
-
-select {
-   height: 24px;
-   font-size: 15px;
-   font-weight: bold;
-   color: #444;
-   background: #fcfcfc;
-   border: 1px solid #a6a6a6;
-   border-radius: 3px;
-   margin: 0;
-   outline: none;
-   cursor: pointer;
-}
-
-select > option {
-   font-size: 15px;
-   background: #fafafa;
-}
-
-#fonts {
-   width: 140px;
-}
-
-.sp-replacer {
-   background: #fcfcfc;
-   padding: 1px 2px 1px 3px;
-   border-radius: 3px;
-   border-color: #a6a6a6;
-   margin-top: -1px;
-}
-
-.sp-replacer:hover {
-   border-color: #a6a6a6;
-   color: inherit;
-}
-
-.sp-preview {
-   width: 15px;
-   height: 15px;
-   border: none;
-   margin-top: 2px;
-   margin-right: 3px;
-}
-
-.sp-preview-inner, 
-.sp-alpha-inner, 
-.sp-thumb-inner {
-   border-radius: 3px;
-}
-
-.editor {
-   position: relative;
-   width: 100%;
-   height: 60vh;
-   margin: 0 auto;
-   padding: 20px;
-   background: #fcfcfc;
-   border-radius: 3px;
-   box-shadow: inset 0 0 8px 1px rgba(0,0,0,.2);
-   box-sizing: border-box;
-   overflow: hidden;
-   word-break: break-all;
-   outline: none;
-}
-
-*/
-
-/* End of Text Editor CSS */
 
 /* Brian's Notes code */
 
-.notes button {
+.notes button, #addnote button {
     width:200px; important!
 }
 
-.notes {
+.notes, #addnote {
     margin:20px auto;
     text-align:center;
 }
@@ -466,14 +369,22 @@ select > option {
 /* Calendar Code */
 
 
+/* Account Home */
 
+.hubnew {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hubnewimg {
+    margin-bottom: -5%;
+}
 
 *, *:before, *:after {
 -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 
 body {
- overflow: hidden;
  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
  font-weight: 100;
  color: rgba(255, 255, 255, );
@@ -591,7 +502,7 @@ body {
 }
 
 .day.other {
- color: orange;
+ color: gray;
 }
 
 .day.today {
@@ -640,7 +551,6 @@ body {
 .details {
   position: relative;
   width: 420px;
-  height: 75px;
   background: skyblue;
   margin-top: 5px;
   border-radius: 4px;
@@ -659,13 +569,16 @@ body {
   animation: moveToTopFade .5s ease both;
 }
 
+.legend {
+    display: none;
+}
+
 .arrow {
   position: absolute;
   top: -5px;
   left: 50%;
   margin-left: -26px;
   width: 0px;
-    background: skyblue;
   height: 0px;
   border-style: solid;
   border-width: 0 5px 5px 5px;
@@ -674,7 +587,7 @@ body {
 }
 
 .events {
-  height: 75px;
+  height: auto;
   padding: 7px 0;
   overflow-y: auto;
   overflow-x: hidden;
@@ -705,10 +618,12 @@ body {
 }
 
 .event {
-  font-size: 20px;
+    font-family: Ubuntu;
+  font-size: 15px;
+    color: white;
   line-height: 22px;
   letter-spacing: .5px;
-  padding: 16px 16px;
+  padding: 5px 5px;
   vertical-align: top;
 }
 
@@ -720,7 +635,7 @@ body {
   height: 10px;
   width: 10px;
   display: inline-block;
-  margin: 6px 0 0;
+  margin: 6px 5px 0;
   vertical-align: top;
 }
 
@@ -887,14 +802,14 @@ input {
   margin-bottom: 20px;
 }
 
-#next { 
+#next {
     position: static;
     margin:100px 50px;
     }
 
 #submit { 
-    position: static;
-    margin:100px 50px;
+    position: absolute;
+    margin:100px 105px;
     }
     
 #bathroom { 
@@ -1014,24 +929,40 @@ fieldset.date select:hover
   color: cornflowerblue;
 }
 
-svg{
-  display:block;
-  margin:0 auto;
-  position: relative;
-  width:100vh;
-}
-
-#tableLamp path,
-#tableLamp rect,
-#tableLamp circle,
-#window path,
-#window rect,
-#pictures rect{
-  fill:none;
-  stroke-width:5px;
-  stroke:#c7e7fc;
-}
-
-#unbend{visibility:hidden}
-
 /* End of Text Editor CSS */
+
+
+/* Photo Gallery */
+
+#beforeaftergallery {
+    position:relative;
+}
+
+#photoupload, .beforeafterphotos, #ellipsis {
+    width: 75px;
+    height: 75px;
+    margin-right:10px;
+    float:left;
+    margin-bottom:3px;
+    background-color: azure;
+}
+
+#ellipsis {
+    display:none;
+    position:absolute;
+    left:172.5px;
+    top:20px;
+    background-color:azure;
+    height:auto;
+    text-align:center;
+}
+
+#photoupload {
+    margin-left:10px; 
+}
+
+.beforeafterphotos img {
+    width:75px;
+    height:75px;
+}
+
