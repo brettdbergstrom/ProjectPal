@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $("#myCarousel .item").on("click",function(){
-        window.location.href = "index.html";
+        window.location.href = "CurrentProject2.html";
     });
     
     $("#myCarousel2 .item").on("click",function(){
