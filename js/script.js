@@ -41,7 +41,7 @@ $(document).ready(function(){
     var title = [];
     
     // add a first item to the array
-    txt[1] = "My notes for Nov. 24." ;   
+    txt[1] = "Call Brett 4 labor." ;   
     title[1] = "11/24 3:43 PM";
     
     //when the user clicks, the modal is filled with the correct content
